@@ -1,0 +1,50 @@
+@use "../abstract/colors" as *;
+
+.footer {
+  background-color: $dark-blue;
+  text-align: center;
+  padding: 40px 0;
+
+  &-social {
+    &-logo {
+      width: 7.722em;
+      height: 20px;
+      margin: 0 auto;
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      column-gap: 16px;
+      margin: 32px 0;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &-link {
+    color: $white;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 32px;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  &-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin-top: 24px;
+      font-size: 15px;
+      line-height: 26px;
+    }
+  }
+}

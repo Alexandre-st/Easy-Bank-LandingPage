@@ -1,0 +1,53 @@
+@use "../abstract/colors" as *;
+
+.articles {
+  background-color: $gray;
+  padding: 88px 24px 88px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 31px;
+  }
+}
+
+.article {
+  background-color: $white;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  width: 327px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 327px;
+    height: 200px;
+    // To have the same proportion
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &-content {
+    padding: 25px 28px 24px 31px;
+    text-align: left;
+
+    &-name {
+      font-size: 10px;
+      margin-bottom: -8px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    &-text {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+}

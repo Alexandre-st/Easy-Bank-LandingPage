@@ -1,0 +1,36 @@
+@use "../abstract/colors" as *;
+
+.description {
+  background-color: $back-gray;
+  padding: 0 24px;
+  text-align: center;
+
+  &-header {
+    padding-top: 64px;
+
+    p {
+      margin: 14px 0 56px 0;
+    }
+  }
+
+  &-content {
+    &-article {
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 64px;
+      }
+
+      h3 {
+        margin: 24px 0 16px 0;
+      }
+
+      &-image {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

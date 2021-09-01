@@ -1,12 +1,7 @@
 // To setup media queries
 @mixin mq($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 450px) {
-      @content;
-    }
-  }
   @if $breakpoint == tablet {
-    @media (max-width: 732px) {
+    @media (min-width: 700px) {
       @content;
     }
   } @else if $breakpoint == desktop {

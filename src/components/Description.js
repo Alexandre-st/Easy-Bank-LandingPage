@@ -27,26 +27,30 @@ const Description = () => {
         </p>
       </div>
       <div className="description-content">
-        <Article 
-          image={banking}
-          title="Online Banking"
-          text="Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."
-        />
-        <Article 
-          image={budgeting}
-          title="Simple Budgeting"
-          text="See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits."
-        />
-        <Article 
-          image={onboarding}
-          title="Fast Onboarding"
-          text="We don’t do branches. Open your account in minutes online and start taking control of your finances right away."
-        />
-        <Article 
-          image={api}
-          title="Open API"
-          text="Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."
-        />
+        <div className="description-content-grid1">
+          <Article 
+            image={banking}
+            title="Online Banking"
+            text="Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."
+          />
+          <Article 
+            image={budgeting}
+            title="Simple Budgeting"
+            text="See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits."
+          />
+        </div>
+        <div className="description-content-grid2">
+          <Article 
+            image={onboarding}
+            title="Fast Onboarding"
+            text="We don’t do branches. Open your account in minutes online and start taking control of your finances right away."
+          />
+          <Article 
+            image={api}
+            title="Open API"
+            text="Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."
+          />
+        </div>
       </div>
     </section>
   );

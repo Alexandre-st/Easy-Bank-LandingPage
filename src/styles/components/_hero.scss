@@ -1,3 +1,5 @@
+@use "../variables/mixins" as *;
+
 .hero {
   background-image: url("../../assets/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
@@ -11,10 +13,18 @@
     padding: 0 14px;
     top: -64px;
     z-index: 1;
+
+    @include mq(tablet) {
+      padding: 0 24px;
+    }
   }
 
   &-content {
     padding: 0 24px;
+
+    @include mq(tablet) {
+      padding: 0 34px;
+    }
 
     &-title {
       font-size: 40px;

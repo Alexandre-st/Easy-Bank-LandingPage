@@ -32,8 +32,11 @@ const Header = () => {
             <li>Blog</li>
             <li>Carrers</li>
           </ul>
-          <a href="/" className="button">Request Invite</a>
         </nav>
+
+        <div className="navigation-button">
+          <a href="/" className="button">Request Invite</a>
+        </div>
 
         {/* / == MENU == / */}
         <div className="navigation-menu" onClick={handleClick}>

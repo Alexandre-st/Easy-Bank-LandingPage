@@ -11,7 +11,7 @@ const Hero = () => {
       </div>
       <div className="hero-content">
         <h1 className="hero-content-title">Next generation digital banking</h1>
-        <p className="text">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+        <p className="hero-content-text text">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
         <a href="/" className="button">Request Invite</a>
       </div>
     </section>

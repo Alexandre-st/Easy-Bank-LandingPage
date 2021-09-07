@@ -13,12 +13,20 @@
     padding: 0 34px;
   }
 
+  @include mq(desktop) {
+    margin-top: -150px;
+  }
+
   &-header {
     padding-top: 64px;
 
     @include mq(tablet) {
       grid-column: 1/4;
       grid-row: 1/2;
+    }
+
+    @include mq(desktop) {
+      width: 635px;
     }
 
     p {
@@ -30,6 +38,11 @@
     @include mq(tablet) {
       grid-column: 1/5;
       grid-row: 2/3;
+    }
+
+    @include mq(desktop) {
+      display: flex;
+      gap: 30px;
     }
 
     &-grid1,
@@ -47,6 +60,10 @@
       @include mq(tablet) {
         min-width: 255px;
         width: 100%;
+      }
+
+      @include mq(desktop) {
+        min-width: 0;
       }
 
       &:last-child {

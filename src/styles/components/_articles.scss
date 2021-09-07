@@ -22,6 +22,10 @@
       grid-row: 2/3;
     }
 
+    &-grid1 {
+      margin-bottom: 24px;
+    }
+
     &-grid1,
     &-grid2 {
       @include mq(tablet) {

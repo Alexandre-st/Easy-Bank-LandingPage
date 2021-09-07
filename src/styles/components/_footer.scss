@@ -1,15 +1,28 @@
 @use "../abstract/colors" as *;
+@use "../variables/mixins" as *;
 
 .footer {
   background-color: $dark-blue;
   text-align: center;
   padding: 40px 0;
 
+  @include mq(desktop) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: start;
+    padding: 40px 34px;
+  }
+
   &-social {
     &-logo {
       width: 7.722em;
       height: 20px;
       margin: 0 auto;
+
+      @include mq(desktop) {
+        width: 139px;
+        margin: 0;
+      }
     }
 
     &-link {
@@ -18,9 +31,19 @@
       column-gap: 16px;
       margin: 32px 0;
 
+      @include mq(desktop) {
+        column-gap: 13.33px;
+        margin: 55px 0 0 0;
+      }
+
       img {
         width: 24px;
         height: 24px;
+
+        @include mq(desktop) {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -31,6 +54,17 @@
     line-height: 26px;
     margin-bottom: 32px;
 
+    @include mq(desktop) {
+      display: flex;
+      grid-column: 3/4;
+      gap: 30px;
+
+      &-grid1,
+      &-grid2 {
+        width: 160px;
+      }
+    }
+
     li {
       margin-bottom: 8px;
     }
@@ -40,6 +74,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mq(desktop) {
+      grid-column: 4/7;
+      align-items: flex-end;
+    }
 
     p {
       margin-top: 24px;

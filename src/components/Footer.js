@@ -22,12 +22,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-link">
-        <ul>
+        <ul className="footer-link-grid1">
           <li>About Us</li>
           <li>Contact</li>
           <li>Blog</li>
         </ul>
-        <ul>
+        <ul className="footer-link-grid2">
           <li>Careers</li>
           <li>Support</li>
           <li>Privacy Policy</li>

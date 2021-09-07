@@ -18,10 +18,18 @@ header {
     padding: 18px 34px;
   }
 
+  @include mq(desktop-large) {
+    max-width: 1440px;
+    padding: 18px 165px;
+  }
+
   &-logo {
     grid-column: 1/2;
     width: 7.722em;
     height: 20px;
+
+    @include mq(desktop-large) {
+    }
   }
 
   &-desktop {
@@ -31,6 +39,10 @@ header {
       display: block;
       grid-column: 3/5;
       margin-left: -30px;
+
+      @include mq(desktop-large) {
+        grid-column: 4/5;
+      }
 
       ul {
         display: flex;
@@ -48,6 +60,10 @@ header {
     @include mq(desktop) {
       display: block;
       grid-column: 6/7;
+    }
+
+    @include mq(desktop-large) {
+      grid-column: 7/8;
     }
   }
 

@@ -10,32 +10,34 @@ import instagram from '../assets/images/icon-instagram.svg';
 
 const Footer = () => {
   return (
-    <section className="footer">
-      <div className="footer-social">
-        <img className="footer-social-logo" src={logo} alt="Logo easybank"  />
-        <div className="footer-social-link">
-          <img alt="Facebook" src={facebook} />
-          <img alt="Youtube" src={youtube} />
-          <img alt="Twitter" src={twitter} />
-          <img alt="Pinterest" src={pinterest} />
-          <img alt="Intagram" src={instagram} />
+    <section className="footer-container">
+      <div className="footer">
+        <div className="footer-social">
+          <img className="footer-social-logo" src={logo} alt="Logo easybank"  />
+          <div className="footer-social-link">
+            <img alt="Facebook" src={facebook} />
+            <img alt="Youtube" src={youtube} />
+            <img alt="Twitter" src={twitter} />
+            <img alt="Pinterest" src={pinterest} />
+            <img alt="Intagram" src={instagram} />
+          </div>
         </div>
-      </div>
-      <div className="footer-link">
-        <ul className="footer-link-grid1">
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>Blog</li>
-        </ul>
-        <ul className="footer-link-grid2">
-          <li>Careers</li>
-          <li>Support</li>
-          <li>Privacy Policy</li>
-        </ul>
-      </div>
-      <div className="footer-copyright">
-        <a href="/" className="button">Request Invite</a>
-        <p>© Easybank. All Rights Reserved</p>
+        <div className="footer-link">
+          <ul className="footer-link-grid1">
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Blog</li>
+          </ul>
+          <ul className="footer-link-grid2">
+            <li>Careers</li>
+            <li>Support</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div className="footer-copyright">
+          <a href="/" className="button">Request Invite</a>
+          <p>© Easybank. All Rights Reserved</p>
+        </div>
       </div>
     </section>
   );

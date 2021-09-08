@@ -41,6 +41,11 @@ p {
   height: 44px;
   border-radius: 22px;
   font-size: 0.8rem;
+
+  &:hover {
+    opacity: 0.4;
+    transition: all 0.4s ease;
+  }
 }
 
 .text {

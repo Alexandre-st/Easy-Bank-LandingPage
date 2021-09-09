@@ -14,7 +14,7 @@ In the project director, you can run :
 
 ### `npm install`
 
-### `yarn dev`
+### `yarn start`
 
 ## My process
 
